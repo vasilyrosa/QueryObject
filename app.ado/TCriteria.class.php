@@ -38,7 +38,7 @@ class TCriteria extends TExpression
 				$result .= $operator.$expression->dump().' ';
 			}
 		$result = trim($result);
-		return "({$result})";
+		return "{$result}"; //use 
 		}
 	}	
 

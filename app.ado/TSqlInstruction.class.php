@@ -6,7 +6,7 @@
 *  sql(SELECT , INSERT, DELETE e UPDAATE)
 **/
 
-class TSqlInstruction
+abstract class TSqlInstruction
 {
 	protected $sql;   //armazena a instrução sql
 	protected $criteria;  //armazena o objeto critéria
@@ -44,7 +44,7 @@ class TSqlInstruction
 	* decalrado como abstract obrigamos sua declaração nas classes filhas
 	* uma vez que seu comportamento será distinto em cada uma delas, configurando o polimorfismo
 	**/
-	abstract function getInstruction();
+	 abstract function getInstruction();
 	
 	
 }//end_class
